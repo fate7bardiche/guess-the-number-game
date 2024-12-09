@@ -1,6 +1,8 @@
 # guess-the-number-game
 対話形式の数字当てゲームです。
 
+## 使用技術
+言語: Python
 
 ## 起動方法
 $ ls
@@ -29,6 +31,5 @@ $ python3 main.py
 残りの試行回数が表示されます。  
 最後の試行時には、その旨が表示されます。
 
-
-## 使用技術
-言語: Python
+## 遊び方の例 
+![](images/game-flow-example.png)
