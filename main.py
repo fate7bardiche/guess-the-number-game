@@ -1,7 +1,7 @@
 import sys
 import random
 
-description = "ユーザーは、この 2 つの数字を入力すると、プログラムが n から m の範囲内で乱数を生成します。\nその後、ユーザーは試行可能回数を超えるにか乱数を正しく推測するまで、ゲームループの中で繰り返し数字を入力することになります。\n"
+description = "ユーザーは、この 2 つの数字を入力すると、プログラムが 最少数(n) から 最少数(m) の範囲内で乱数を生成します。\nその後、ユーザーは試行可能回数を超えるにか乱数を正しく推測するまで、ゲームループの中で繰り返し数字を入力することになります。\n"
 sys.stdout.buffer.write(description.encode('utf-8'))
 
 # 最少数
@@ -11,10 +11,10 @@ m = 0
 # 試行可能回数
 lim = 0
 
-# nを要求する対話
+# 最少数を要求する対話
 while True:
     sys.stdout.buffer.write("\n".encode('utf-8'))
-    sys.stdout.buffer.write("nを数字で入力してください(例: 4)\n".encode('utf-8'))
+    sys.stdout.buffer.write("最少数を数字で入力してください(例: 4)\n".encode('utf-8'))
     sys.stdout.buffer.flush()
 
     nStr = sys.stdin.buffer.readline().decode()
@@ -27,14 +27,14 @@ while True:
         continue
     else:
         n = int(nStr)
-        sys.stdout.buffer.write(f'nに{n}が設定されました\n'.encode('utf-8'))
+        sys.stdout.buffer.write(f'最少数に{n}が設定されました\n'.encode('utf-8'))
         break
 
 
-# mを要求する対話
+# 最大数を要求する対話
 while True:
     sys.stdout.buffer.write("\n".encode('utf-8'))
-    sys.stdout.buffer.write("mを数字で入力してください(例: 21)\n".encode('utf-8'))
+    sys.stdout.buffer.write("最大数を数字で入力してください(例: 21)\n".encode('utf-8'))
     sys.stdout.buffer.flush()
 
     mStr = sys.stdin.buffer.readline().decode()
@@ -47,7 +47,7 @@ while True:
         continue
     else:
         m = int(mStr)
-        sys.stdout.buffer.write(f"mに{m}が設定されました\n".encode('utf-8'))
+        sys.stdout.buffer.write(f"最大数に{m}が設定されました\n".encode('utf-8'))
         break
 
 # 試行可能回数を要求する対話
