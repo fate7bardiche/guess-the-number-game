@@ -5,7 +5,7 @@
 言語: Python
 
 ## 起動方法
-$ ls
+$ pwd
 > ${PROJECT_PARENT_DIRECTORY_PATH}/guess-the-number-game
 
 $ python3 main.py
